@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Join Trade With Chiru Anand — free stock market education community on Telegram.">
+<title>TRADE WITH CHIRU ANAND | Official Community</title>
+
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+/* Full-screen, no card wrapper */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 34px 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #fff0f0;
+  background: radial-gradient(circle at 50% 15%, #3a0c14 0%, #100305 60%);
+  text-align: center;
+}
+
+.content { width: 100%; max-width: 460px; }
+
+.top-line {
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(90deg, #C8102E, #FFC72C);
+  border-radius: 4px;
+  margin: 0 auto 20px;
+}
+
+.avatar {
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #C8102E;
+  background: #2a1418;
+  margin: 0 auto 20px;
+  display: block;
+  box-shadow: 0 0 0 9px rgba(200, 16, 46, 0.12);
+}
+
+h1 {
+  font-size: 27px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  margin-bottom: 8px;
+  line-height: 1.15;
+}
+.subtitle {
+  font-size: 14px;
+  color: #f0c9a8;
+  margin-bottom: 24px;
+}
+
+.verified-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12.5px;
+  color: #ffe08a;
+  margin-bottom: 28px;
+}
+.verified-line i { color: #FFC72C; font-size: 13px; }
+
+.stat-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 18px 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.stat-row .s strong {
+  display: block;
+  font-size: 20px;
+  font-weight: 900;
+  color: #C8102E;
+}
+.stat-row .s span { font-size: 10.5px; color: #b98a76; }
+
+/* Premium CTA button - glass shine, icon badge, two-line text */
+.cta-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  width: 100%;
+  padding: 18px 24px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #17A3E8 0%, #0088CC 45%, #006BA3 100%);
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  box-shadow: 0 20px 44px rgba(0, 136, 204, 0.5), inset 0 1px 0 rgba(255,255,255,0.35), inset 0 -2px 6px rgba(0,0,0,0.15);
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: transform 0.15s ease, filter 0.2s ease;
+  cursor: pointer;
+  margin-bottom: 26px;
+  overflow: hidden;
+}
+.cta-btn::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0) 100%);
+  pointer-events: none;
+}
+.cta-btn:active { transform: scale(0.97); }
+.cta-btn:hover { filter: brightness(1.06); }
+
+.cta-icon-badge {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.16);
+  border: 1px solid rgba(255,255,255,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cta-icon-badge i { font-size: 20px; }
+
+.cta-text-wrap { position: relative; text-align: left; }
+.cta-text-wrap .main-txt {
+  display: block;
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+.cta-text-wrap .sub-txt {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.75);
+  margin-top: 2px;
+}
+.cta-arrow {
+  position: relative;
+  margin-left: auto;
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 14px;
+  color: #f0dcdc;
+}
+.check-item i { color: #FFC72C; font-size: 14px; flex-shrink: 0; }
+
+.disclaimer {
+  margin-top: 26px;
+  font-size: 10.5px;
+  line-height: 1.75;
+  color: #6b3a30;
+  padding: 16px 6px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+</style>
+
+</head>
+<body>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1577853333963468');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1577853333963468&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<div class="content">
+
+  <div class="top-line"></div>
+
+  <img src="chiru.jpg" class="avatar" alt="Profile Image" width="124" height="124" decoding="async" fetchpriority="high">
+
+  <h1>TRADE WITH CHIRU ANAND</h1>
+  <p class="subtitle">ಷೇರು ಮಾರುಕಟ್ಟೆ &amp; Financial Trading Education</p>
+
+  <div class="verified-line"><i class="fas fa-shield-halved"></i> ಪರಿಶೀಲಿಸಲಾದ Educational Community</div>
+
+  <div class="stat-row">
+    <div class="s"><strong>100%</strong><span>ಆರಂಭಿಕರಿಗೆ</span></div>
+    <div class="s"><strong>ಪ್ರತಿದಿನ</strong><span>Updates</span></div>
+    <div class="s"><strong>ಉಚಿತ</strong><span>Access</span></div>
+  </div>
+
+  <a class="cta-btn" id="telegramBtn" href="https://t.me/+DUWtGJYtcVs1OTJl" rel="noopener noreferrer">
+    <span class="cta-icon-badge"><i class="fab fa-telegram-plane"></i></span>
+    <span class="cta-text-wrap">
+      <span class="main-txt">Join Free Telegram Community</span>
+      <span class="sub-txt">Instant access • 100% free</span>
+    </span>
+    <i class="fas fa-chevron-right cta-arrow"></i>
+  </a>
+
+  <div class="checklist">
+    <div class="check-item"><i class="fas fa-check-circle"></i> ಪ್ರತಿದಿನ Market Updates ಮತ್ತು Insights</div>
+    <div class="check-item"><i class="fas fa-check-circle"></i> ಉಚಿತ Educational Content, no hidden fees</div>
+    <div class="check-item"><i class="fas fa-check-circle"></i> ಆರಂಭಿಕರಿಗೆ ಸುಲಭ ವಿವರಣೆ</div>
+    <div class="check-item"><i class="fas fa-check-circle"></i> ಸಂಪೂರ್ಣ Active Community Support</div>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Disclaimer:</strong> ಈ platform ಕೇವಲ educational ಮತ್ತು informational ಉದ್ದೇಶಗಳಿಗಾಗಿ ಮಾತ್ರ. ಇದು ಯಾವುದೇ financial advice ಅಲ್ಲ ಮತ್ತು ಯಾವುದೇ ಲಾಭದ ಖಾತರಿ ನೀಡುವುದಿಲ್ಲ. Stock market investments carry risk — ಯಾವುದೇ ನಿರ್ಧಾರ ತೆಗೆದುಕೊಳ್ಳುವ ಮೊದಲು ದಯವಿಟ್ಟು ನಿಮ್ಮ ಸ್ವಂತ research ಮಾಡಿ.
+  </div>
+</div>
+
+<script>
+(function() {
+  const telegramLink = "https://t.me/+DUWtGJYtcVs1OTJl";
+  const telegramBtn = document.getElementById("telegramBtn");
+
+  telegramBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    if (window.fbq) {
+      fbq('track', 'Subscribe', { content_name: 'Telegram Community', button_click: true }, { eventID: 'telegram_subscribe_' + Date.now() });
+    }
+    setTimeout(() => {
+      window.location.href = telegramLink;
+    }, 200);
+  });
+})();
+</script>
+
+</body>
+</html>
